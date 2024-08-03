@@ -1,0 +1,42 @@
+.header,
+.footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    background-color: transparent;
+    color: inherit;
+    text-align: center;
+    padding: 0;
+    z-index: var(--z-index-header, --z-index-footer);
+}
+
+.header {
+    top: 0;
+}
+
+.footer {
+    bottom: 0;
+}
+
+main {
+    height: 100vh;
+    /* Altura del viewport */
+    overflow-y: scroll;
+    /* Permite el scroll en el main */
+    scroll-snap-type: y mandatory;
+    /* Activar el scroll snap */
+    scroll-behavior: smooth;
+    /* Desplazamiento suave */
+    padding-top: 60px;
+    /* Espacio para el header */
+    padding-bottom: 60px;
+    /* Espacio para el footer */
+    box-sizing: border-box;
+    /* Asegura que el padding se incluya en el cálculo del tamaño */
+}
+
+main::-webkit-scrollbar {
+    background: transparent;
+    width: 0%;
+    /* Ajusta el ancho del scrollbar si es necesario */
+}
