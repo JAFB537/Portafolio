@@ -1,0 +1,16 @@
+.footer-container {
+    background: var(--atom-dark-background, #21252b);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--text-size-small, inherit);
+    margin: 0;
+    padding: 0.25em 0.25em 0.25em 0.25em;
+    gap: 1em;
+}
+
+.footer-img {
+    height: var(--text-size-small, inherit);
+    cursor: grab;
+}
