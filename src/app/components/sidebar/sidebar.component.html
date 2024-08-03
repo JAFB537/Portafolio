@@ -1,0 +1,69 @@
+<aside class="sidebar-container" [class.collapsed]="isCollapsed">
+  <section class="sidebar-return">
+    <img
+      (click)="onToggleSidebar()"
+      class="img-invert-color"
+      src="../../../assets/images/arrow-left-circle-fill.svg"
+      alt="Arrow"
+      title="Return"
+    />
+  </section>
+
+  <header class="sidebar-title" [class.collapsed]="isCollapsed">
+    <h2>Flores Barco, José Andrés</h2>
+    <span><small>PORTAFOLIO</small></span>
+  </header>
+
+  <section class="sidebar-options">
+    <ul>
+      <li><a [routerLink]="['/']" fragment="section1">Inicio</a></li>
+      <li><a [routerLink]="['/']" fragment="section2">Experiencia</a></li>
+    </ul>
+  </section>
+
+  <footer class="sidebar-footer">
+    <nav>
+      <img
+        (click)="openWindow(githubLink)"
+        class="footer-img img-invert-color"
+        src="../../../assets/images/github.svg"
+        alt="GitHub"
+        title="GitHub"
+      />
+
+      <img
+        (click)="openWindow(linkedinLik)"
+        class="footer-img img-invert-color"
+        src="../../../assets/images/linkedin.svg"
+        alt="Linkedin"
+        title="Linkedin"
+      />
+
+      <img
+        (click)="copyText(emailLink)"
+        class="footer-img img-invert-color"
+        src="../../../assets/images/envelope-at-fill.svg"
+        alt="Gmail"
+        title="Gmail"
+      />
+
+      <img
+        (click)="openWhatsapp(phoneNumber)"
+        class="footer-img img-invert-color"
+        src="../../../assets/images/whatsapp.svg"
+        alt="Whatsapp"
+        title="Whatsapp"
+      />
+
+      <img
+        (click)="downloadPdf(resumeEsPath)"
+        class="footer-img img-invert-color"
+        src="../../../assets/images/file-post.svg"
+        alt="Curriculum"
+        title="Curriculum"
+      />
+    </nav>
+
+    <span>© 2024 Derechos reservados</span>
+  </footer>
+</aside>
