@@ -1,0 +1,68 @@
+<section class="info-container">
+  <section class="info-img">
+    <img
+      class="img-invert-color"
+      src="../../../assets/images/people-fill.svg"
+      alt="José Andrés Flores Barco"
+      title="Foto Para el Portafolio"
+    />
+    <button (click)="openWindow(linkedinLik)" class="glow-on-hover">
+      Disponible Para Trabajar
+    </button>
+  </section>
+
+  <header class="info-header">
+    <h1 class="info-title">Hey Soy José Flores</h1>
+  </header>
+
+  <section class="info-text-container">
+    <p>
+      +3 años de experiencia como
+      <strong>Ingeniero de Software de Guatemala</strong>. Especializado en
+      aplicaciones web y crear soluciones eficientes.
+    </p>
+  </section>
+
+  <section class="info-navbar">
+    <button (click)="openWindow(githubLink)" class="btn-slide-left">
+      <img
+        class="img-invert-color"
+        src="../../../assets/images/github.svg"
+        alt="GitHub"
+      />
+      GitHub
+    </button>
+    <button (click)="openWindow(linkedinLik)" class="btn-slide-left">
+      <img
+        class="img-invert-color"
+        src="../../../assets/images/linkedin.svg"
+        alt="Linkedin"
+      />
+      Linkedin
+    </button>
+    <button (click)="copyText(emailLink)" class="btn-slide-left">
+      <img
+        class="img-invert-color"
+        src="../../../assets/images/envelope-at-fill.svg"
+        alt="Gmail"
+      />
+      Gmail
+    </button>
+    <button (click)="openWhatsapp(phoneNumber)" class="btn-slide-left">
+      <img
+        class="img-invert-color"
+        src="../../../assets/images/whatsapp.svg"
+        alt="Whatsapp"
+      />
+      Whatsapp
+    </button>
+    <button (click)="downloadPdf(resumeEsPath)" class="btn-slide-left">
+      <img
+        class="img-invert-color"
+        src="../../../assets/images/file-post.svg"
+        alt="Curriculum"
+      />
+      Curriculum
+    </button>
+  </section>
+</section>
