@@ -1,0 +1,23 @@
+.header-container {
+    background: var(--atom-dark-background, #21252b);
+    color: inherit;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--text-size-base);
+    gap: 5%;
+}
+
+.header-title {
+    color: var(--atom-dark-keywords, #CD9ADC);
+    font-weight: bold;
+}
+
+.header-button {
+    background: transparent;
+    box-sizing: border-box;
+    border: 0;
+    color: inherit;
+}
