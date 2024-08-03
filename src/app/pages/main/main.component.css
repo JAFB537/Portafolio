@@ -1,0 +1,17 @@
+.section {
+    height: 100vh;
+    padding: 0 30% 0 30%;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--text-size-xlarge);
+    color: inherit;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 0 3% 0 3%;
+    }
+}
